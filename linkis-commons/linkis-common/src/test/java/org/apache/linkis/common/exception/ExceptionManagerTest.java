@@ -40,7 +40,7 @@ class ExceptionManagerTest {
                 + "null");
     assertEquals(errorException.getClass(), ExceptionManager.generateException(null).getClass());
     assertEquals(errorException.toString(), ExceptionManager.generateException(null).toString());
-    Map<String, Object> map = new HashMap<>();
+    Map<String, Object> map = new TreeMap<>();
     map.put("level", null);
     map.put("errCode", 1);
     map.put("desc", "test");
